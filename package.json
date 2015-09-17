@@ -14,7 +14,8 @@
   },
   "devDependencies":
   {
-    "//" : [ "//": "html/css/js project dependencies",
+    "//": "html/css/js project dependencies",
+    "//" : [ 
     "autoprefixer":"latest",
     "browser-sync":"latest",
     "metalsmith": "latest",
@@ -24,8 +25,8 @@
     "metalsmith-autoprefixer":"latest",
     "metalsmith-browser-sync":"latest",
     "browserify":"latest"],
+     "//" : "I commented this out because I already have mines",
     "//":[
-      "//" : "I commented this out because I already have mines",
       "jshint" : "latest"
     ]
     
