@@ -6,7 +6,7 @@
   {
     "destdir": "",
     "projectdir":"src",
-    "projectsrc":"https://github.com/karneaud/headstart-boilerplate.git",
+    "projectsrcfiles":"",
   },
   "dependencies":
   {
@@ -16,18 +16,18 @@
   {
     "//": "html/css/js project dependencies",
     "//" : [ 
-    "autoprefixer":"latest",
-    "browser-sync":"latest",
-    "metalsmith": "latest",
-    "metalsmith-layouts":"latest",
-    "metalsmith-in-place":"latest",
-    "metalsmith-register-partials":"latest",
-    "metalsmith-autoprefixer":"latest",
-    "metalsmith-browser-sync":"latest",
-    "browserify":"latest"],
+    "autoprefixer",
+    "browser-sync",
+    "metalsmith",
+    "metalsmith-layouts",
+    "metalsmith-in-place",
+    "metalsmith-register-partials,
+    "metalsmith-autoprefixer",
+    "metalsmith-browser-sync",
+    "browserify"],
      "//" : "I commented this out because I already have mines",
     "//":[
-      "jshint" : "latest"
+      "jshint"
     ]
     
   },
