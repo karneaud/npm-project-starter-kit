@@ -7,6 +7,7 @@
     "destdir": "",
     "projectdir":"src",
     "projectsrcfiles":"",
+    "posttasks":""
   },
   "dependencies":
   {
@@ -32,10 +33,8 @@
     
   },
   "scripts":{
-    "postinstall": "npm run install:task",
-    "install:task" : "parallelshell 'npm run install:bower' 'npm run install:boiler'",
-    "install:bower": "bower install",
-    "install:boiler": "git submodule add $npm_package_config_projectsrc $npm_package_config_projectdir",
+    "postinstall": "npm run install:tasks",
+    "install:tasks" : "parallelshell $npm_package_config_posttasks",
     "clean": "rm -r $npm_package_config_projectdir",
     "build:dev":"",
     "build":"",
