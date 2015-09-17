@@ -1,0 +1,38 @@
+{
+  "name": "me-starter-kit",
+  "description": "starter kit for rapid application development",
+  "version": "0.0.1",
+  "config":
+  {
+    "destdir": "",
+    "projectdir":"src",
+    "projectsrc":"https://github.com/karneaud/headstart-boilerplate.git",
+  },
+  "dependencies":
+  {
+    "parallelshell": "latest"
+  },
+  "devDependencies":
+  {
+    "//" : "html/css/js project dependencies",
+    "autoprefixer":"latest",
+    "browser-sync":"latest",
+    "metalsmith": "latest",
+    "metalsmith-layouts":"latest",
+    "metalsmith-in-place":"latest",
+    "metalsmith-register-partials":"latest",
+    "metalsmith-autoprefixer":"latest",
+    "metalsmith-browser-sync":"latest",
+    "browserify":"latest",
+    
+  },
+  "scripts":{
+    "postinstall": "npm run install:task",
+    "install:task" : "parallelshell 'npm run install:bower' 'npm run install:boiler'",
+    "install:bower": "bower install",
+    "install:boiler": "git submodule add $npm_package_config_projectsrc $npm_package_config_projectdir",
+    "clean": "rm -r $npm_package_config_projectdir",
+    "build:dev":"",
+    "build":"",
+  }
+}
