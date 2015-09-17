@@ -21,7 +21,7 @@
     "metalsmith",
     "metalsmith-layouts",
     "metalsmith-in-place",
-    "metalsmith-register-partials,
+    "metalsmith-register-partials",
     "metalsmith-autoprefixer",
     "metalsmith-browser-sync",
     "browserify"],
