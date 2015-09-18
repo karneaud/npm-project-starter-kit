@@ -7,7 +7,6 @@
     "destdir": "",
     "projectdir":"src",
     "projectsrcfiles":"",
-    "posttasks":""
   },
   "dependencies":
   {
@@ -34,8 +33,12 @@
   },
   "scripts":{
     "postinstall": "npm run install:tasks",
-    "install:tasks" : "parallelshell $npm_package_config_posttasks",
+    "install:tasks" : "parallelshell ",
     "clean": "rm -r $npm_package_config_projectdir",
+    "//":[
+      "install:bowercomponents: bower install",
+      "install:composercomponents: composer install",
+    ],
     "build:dev":"",
     "build":"",
   }
