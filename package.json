@@ -4,9 +4,7 @@
   "version": "0.0.1",
   "config":
   {
-    "destdir": "",
-    "projectdir":"src",
-    "projectsrcfiles":"",
+    "destdir":""
   },
   "dependencies":
   {
@@ -14,32 +12,21 @@
   },
   "devDependencies":
   {
-    "//": "html/css/js project dependencies",
-    "//" : [ 
-    "autoprefixer",
-    "browser-sync",
-    "metalsmith",
-    "metalsmith-layouts",
-    "metalsmith-in-place",
-    "metalsmith-register-partials",
-    "metalsmith-autoprefixer",
-    "metalsmith-browser-sync",
-    "browserify"],
-     "//" : "I commented this out because I already have mines",
-    "//":[
-      "jshint"
-    ]
-    
+    "autoprefixer":"latest",
+    "browser-sync":"latest",
+    "metalsmith":"latest",
+    "metalsmith-layouts":"latest",
+    "metalsmith-in-place":"latest",
+    "metalsmith-register-partials":"latest",
+    "metalsmith-autoprefixer":"latest",
+    "metalsmith-browser-sync":"latest",
+    "browserify":"latest"
   },
   "scripts":{
     "postinstall": "npm run install:tasks",
-    "install:tasks" : "parallelshell ",
-    "clean": "rm -r $npm_package_config_projectdir",
-    "//":[
-      "install:bowercomponents: bower install",
-      "install:composercomponents: composer install",
-    ],
+    "install:tasks" : "parallelshell",
+    "clean": "rm -r $npm_package_config_destdir",
     "build:dev":"",
-    "build":"",
+    "build":""
   }
 }
