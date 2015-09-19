@@ -12,8 +12,6 @@
   },
   "devDependencies":
   {
-    "autoprefixer":"latest",
-    "browser-sync":"latest",
     "metalsmith":"latest",
     "metalsmith-layouts":"latest",
     "metalsmith-in-place":"latest",
