@@ -2,10 +2,6 @@
   "name": "me-starter-kit",
   "description": "starter kit for rapid application development",
   "version": "0.0.1",
-  "config":
-  {
-    "destdir":""
-  },
   "dependencies":
   {
     "parallelshell": "latest"
