@@ -23,7 +23,6 @@
     "metalsmith-concat":"latest",
     "metalsmith-sass":"latest",
     "metalsmith-templates":"latest",
-    "metalsmith-autoprefixer":"latest",
     "metalsmith-markdown":"latest",
     "metalsmith-ignore":"latest"
   },
