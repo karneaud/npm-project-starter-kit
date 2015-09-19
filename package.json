@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "config":
   {
-    "destdir":"/Users/kendallarneaud/Documents/SERVER/htdocs/fridgemusic"
+    "destdir":""
   },
   "dependencies":
   {
@@ -21,13 +21,16 @@
     "metalsmith-autoprefixer":"latest",
     "metalsmith-browser-sync":"latest",
     "metalsmith-concat":"latest",
-    "metalsmith-sass":"latest"
+    "metalsmith-sass":"latest",
+    "metalsmith-templates":"latest",
+    "metalsmith-autoprefixer":"latest",
+    "metalsmith-markdown":"latest",
+    "metalsmith-ignore":"latest"
   },
   "scripts":{
     "postinstall": "npm run install:tasks",
-    "install:tasks" : "parallelshell 'npm run install:bowercomponents'",
+    "install:tasks" : "parallelshell ",
     "clean": "rm -r $npm_package_config_destdir",
-    "install:bowercomponents":"bower install",
     "build:dev":"",
     "build":""
   }
