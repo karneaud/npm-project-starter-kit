@@ -8,6 +8,7 @@
   },
   "devDependencies":
   {
+    "handlebars":"latest",
     "metalsmith":"latest",
     "metalsmith-layouts":"latest",
     "metalsmith-in-place":"latest",
